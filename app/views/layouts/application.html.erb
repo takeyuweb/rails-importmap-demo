@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Src</title>
+    <title>Demo</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,17 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <nav>
+        <ul>
+          <li><%= link_to "Articles", articles_path %>
+          <li><%= link_to "Hello React", hello_react_path %>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>
